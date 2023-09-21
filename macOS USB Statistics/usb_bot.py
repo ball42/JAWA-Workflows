@@ -18,11 +18,7 @@ from __future__ import annotations
 import datetime
 import json
 import mongoengine
-# import requests
-# import sqlite3
 import sys
-
-# from typing import Dict, List
 
 alias_core = 'core'
 
