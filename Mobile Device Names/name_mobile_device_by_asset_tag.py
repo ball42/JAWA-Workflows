@@ -87,9 +87,8 @@ def convert_time(ts):
 
 
 def webhook_handler():
-    webhook_content = sys.argv[1]
-    webhook_content = json.dumps(webhook_content)
     try:
+        webhook_content = sys.argv[1]
         webhook_json = json.loads(webhook_content)
     except Exception as err:
         print(f"Error {err} - couldn't load event JSON for processing, exiting.")
